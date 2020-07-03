@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/rankingball/static/css/main.5f361e03.chunk.css",
+    "main.js": "/rankingball/static/js/main.2a0fd664.chunk.js",
+    "main.js.map": "/rankingball/static/js/main.2a0fd664.chunk.js.map",
+    "runtime-main.js": "/rankingball/static/js/runtime-main.d584256b.js",
+    "runtime-main.js.map": "/rankingball/static/js/runtime-main.d584256b.js.map",
+    "static/js/2.25b6b53c.chunk.js": "/rankingball/static/js/2.25b6b53c.chunk.js",
+    "static/js/2.25b6b53c.chunk.js.map": "/rankingball/static/js/2.25b6b53c.chunk.js.map",
+    "index.html": "/rankingball/index.html",
+    "precache-manifest.2d6bcf702ecd58423939346e6f94f47e.js": "/rankingball/precache-manifest.2d6bcf702ecd58423939346e6f94f47e.js",
+    "service-worker.js": "/rankingball/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/rankingball/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.25b6b53c.chunk.js.LICENSE.txt": "/rankingball/static/js/2.25b6b53c.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/rankingball/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d584256b.js",
+    "static/js/2.25b6b53c.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.2a0fd664.chunk.js"
+  ]
+}
