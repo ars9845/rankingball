@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/rankingball/static/css/main.3abcc78b.chunk.css",
-    "main.js": "/rankingball/static/js/main.06b496f6.chunk.js",
-    "main.js.map": "/rankingball/static/js/main.06b496f6.chunk.js.map",
+    "main.js": "/rankingball/static/js/main.1142fe83.chunk.js",
+    "main.js.map": "/rankingball/static/js/main.1142fe83.chunk.js.map",
     "runtime-main.js": "/rankingball/static/js/runtime-main.d584256b.js",
     "runtime-main.js.map": "/rankingball/static/js/runtime-main.d584256b.js.map",
-    "static/js/2.1182461d.chunk.js": "/rankingball/static/js/2.1182461d.chunk.js",
-    "static/js/2.1182461d.chunk.js.map": "/rankingball/static/js/2.1182461d.chunk.js.map",
+    "static/js/2.686c0f74.chunk.js": "/rankingball/static/js/2.686c0f74.chunk.js",
+    "static/js/2.686c0f74.chunk.js.map": "/rankingball/static/js/2.686c0f74.chunk.js.map",
     "index.html": "/rankingball/index.html",
-    "precache-manifest.08766a83bd5f650883cbeb2e99ea880f.js": "/rankingball/precache-manifest.08766a83bd5f650883cbeb2e99ea880f.js",
+    "precache-manifest.213058bd772c8079676f8aaad0301283.js": "/rankingball/precache-manifest.213058bd772c8079676f8aaad0301283.js",
     "service-worker.js": "/rankingball/service-worker.js",
     "static/css/main.3abcc78b.chunk.css.map": "/rankingball/static/css/main.3abcc78b.chunk.css.map",
-    "static/js/2.1182461d.chunk.js.LICENSE.txt": "/rankingball/static/js/2.1182461d.chunk.js.LICENSE.txt"
+    "static/js/2.686c0f74.chunk.js.LICENSE.txt": "/rankingball/static/js/2.686c0f74.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d584256b.js",
-    "static/js/2.1182461d.chunk.js",
+    "static/js/2.686c0f74.chunk.js",
     "static/css/main.3abcc78b.chunk.css",
-    "static/js/main.06b496f6.chunk.js"
+    "static/js/main.1142fe83.chunk.js"
   ]
 }
