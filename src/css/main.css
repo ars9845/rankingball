@@ -1,0 +1,44 @@
+@charset "utf-8";
+/************************************************************************
+* filename		: main.css
+* dscription	: main  CSS import
+* author		: ars9845
+* date			: 2020.07.03
++ version		: v1.0
+************************************************************************/
+
+.top-type-menu .type-tab {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;  
+    width: 100%;
+    height: 92px;    
+}
+.type-104002-bg, 
+.type-104012-bg {  
+    background-image: url("https://dev.rankingball.com:13001/img/newbg-baseball@2x.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+.top-type-menu .type-tab li {        
+    position: relative;
+    width: 100%;        
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    font-family: "play";           
+    text-align: center;
+    cursor: pointer;
+}
+.top-type-menu .type-tab li:hover{
+    color:#fff;
+}

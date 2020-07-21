@@ -1,0 +1,174 @@
+@charset "utf-8";
+/************************************************************************
+* filename		: default.css
+* dscription	: default  CSS import
+* author		: ars9845
+* date			: 2020.07.03
++ version		: v1.0
+************************************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Play:400,700');
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', 'Play', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h1, h2, h3, h4, h5, h6, div, p, blockquote, pre, address, table, caption, th, td, form, fieldset, legend, hr, input, textarea{
+	margin: 0; 
+	padding: 0;
+}
+ul, ol, li, dl, dt, dd {
+	margin:0; 
+	padding:0; 
+	list-style:none;
+}
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, main {
+	display: block;
+}
+a:link, a:visited, a:active {
+	text-decoration: none;
+}
+a {
+	border:0;
+	background-color:transparent;
+	cursor: pointer
+}
+a:hover {
+	text-decoration:none;
+}
+img {
+	border-style:none
+}
+button,input,optgroup,select,textarea {
+	margin:0
+}
+button,input {
+	overflow:visible
+}
+button,select {
+	text-transform:none
+}
+button,html [type="button"],[type="reset"],[type="submit"] {
+	-webkit-appearance:button
+}
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {
+	border-style:none;
+	padding:0
+}
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring {
+	outline:1px dotted ButtonText
+}
+legend {
+	box-sizing:border-box;
+	color:inherit;
+	display:table;
+	max-width:100%;
+	padding:0;
+	white-space:normal
+}
+progress {
+	display:inline-block;
+	vertical-align:baseline
+}
+textarea {
+	overflow-x:hidden;
+	overflow-y:auto
+}
+[type="checkbox"],[type="radio"] {
+	/*padding:0*/
+}
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button {
+	height:auto
+}
+[type="search"] {
+	-webkit-appearance:textfield;
+	outline-offset:-2px
+}
+[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration {
+	-webkit-appearance:none
+}
+::-webkit-file-upload-button {
+	-webkit-appearance:button;
+	font:inherit
+}
+input::-ms-clear,input::-ms-reveal {
+	display:none
+}
+input,select,textarea {
+	background-color:#fff;
+	border:1px solid #d8d8d8;
+	border-radius:0;
+	/*-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	-webkit-transition:.3s;
+	-moz-transition:.3s;
+	-ms-transition:.3s;
+	-o-transition:.3s;*/
+}
+input::-webkit-input-placeholder,select::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+	color:#a8a8a8
+}
+input:-moz-placeholder,select:-moz-placeholder,textarea:-moz-placeholder {
+	color:#a8a8a8
+}
+input::-moz-placeholder,select::-moz-placeholder,textarea::-moz-placeholder {
+	color:#a8a8a8
+}
+input:-ms-input-placeholder,select:-ms-input-placeholder,textarea:-ms-input-placeholder {
+	color:#a8a8a8
+}
+input:focus,select:focus,textarea:focus {
+	border-color:#c9c9c9
+}
+input:focus::-webkit-input-placeholder,select:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder {
+	color:transparent
+}
+input:focus:-moz-placeholder,select:focus:-moz-placeholder,textarea:focus:-moz-placeholder {
+	color:transparent
+}
+input:focus::-moz-placeholder,select:focus::-moz-placeholder,textarea:focus::-moz-placeholder {
+	color:transparent
+}
+input:focus:-ms-input-placeholder,select:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder {
+	color:transparent
+}
+input:-webkit-autofill { 
+	-webkit-box-shadow: 0 0 0 30px #fff inset ; 
+	-webkit-text-fill-color: #000;
+} 
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+table {
+	margin:0; 
+	padding:0; 
+	border-collapse:collapse; 
+	border-spacing:0;
+}
+caption {
+	display:none;
+	width:0; 
+	height:0; 
+	line-height:0; 
+	font-size:0; 
+	visibility:hidden; 	
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td {
+	vertical-align: middle;
+}
+.disabled {
+  opacity: 0.65; 
+  cursor: not-allowed!important;
+}
