@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "626d6403991d02ae00aea7264c149370",
+    "revision": "81382e12c676e515ac799c9132b54e50",
     "url": "/rankingball/index.html"
   },
   {
-    "revision": "b2bbc673707be7bb332b",
+    "revision": "3d6d5c1d049c482a1867",
     "url": "/rankingball/static/css/main.2baa6aa0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rankingball/static/js/2.590ba957.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b2bbc673707be7bb332b",
-    "url": "/rankingball/static/js/main.a286ac70.chunk.js"
+    "revision": "3d6d5c1d049c482a1867",
+    "url": "/rankingball/static/js/main.e49fcf24.chunk.js"
   },
   {
     "revision": "dc875caeb62404fd3abb",
