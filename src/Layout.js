@@ -18,20 +18,6 @@ class Layout extends React.Component {
       </HashRouter>
       </div>  
     );
-  }
-}
+  };
+};
 export default Layout;
-
-// function Layout() {
-//   return (
-//     <div className="container">
-//     <HashRouter>
-//       <Top />
-//       <Route path="/" exact={true} component={Main} />
-//       <Route path="/login" component={Login} />      
-//       <Footer />
-//     </HashRouter>
-//     </div>     
-//   ); 
-// }
-// export default Layout;

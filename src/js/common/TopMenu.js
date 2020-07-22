@@ -11,34 +11,49 @@ class LegacyComponentClass extends Component {
         <span>{t(gametype)}</span>
       )
     }
-  }
-const MyComponent = withTranslation('common')(LegacyComponentClass)
+};
+const MyComponent = withTranslation('common')(LegacyComponentClass);
 
 class TopMenu extends Component {
     constructor(props) {
-        super(props);         
-    }
+        super(props);        
+    };
     state = {
         isLoading: true,
         topmenu: []            
     };
     getTopMenu = async () =>{
         const  {data : {result: topmenu }} = await axios.get(utils.DATA_URL+"/menu/103001");        
-        this.setState({topmenu, isLoading :false})         
-        console.log(topmenu);
-    }    
+        this.setState({topmenu, isLoading :false});        
+    };            
     componentDidMount(){
-        this.getTopMenu();
+        this.getTopMenu(); 
     };
-    getMatchChangeClick(gametype){        
-        this.props.onChange(gametype);
-        console.log(gametype);      
-        const statusToClassName = {
-            gametype: gametype           
-        };               
-    }    
+    getMatchChangeClick(gametype, submenu){                       
+        var local_gametype = localStorage.getItem('gametype');
+
+        if(gametype == 104002){            
+            localStorage.setItem('gametype', 104012);            
+            if(gametype==undefined){                        
+                this.props.onChange(local_gametype, submenu);            
+            }else{                                                                                                 
+                this.props.onChange(104012, submenu);
+            }     
+        }else{            
+            localStorage.setItem('gametype', gametype);            
+            if(gametype==undefined){                        
+                this.props.onChange(local_gametype, submenu);            
+            }else{                                                                                                 
+                this.props.onChange(gametype, submenu);
+            }    
+        }
+
+                   
+    };    
     render() {  
-        const {isLoading, topmenu} = this.state;          
+        const {isLoading, topmenu} = this.state;        
+        var local_gametype = localStorage.getItem('gametype');                         
+       
         return (      
             <div>
                 {isLoading ? (
@@ -48,7 +63,7 @@ class TopMenu extends Component {
             ) : (
                 <div className="top-type-menu" >
                     <ul className={`type-tab type-104002-bg`}>                                                                                                         
-                    <li onClick={() => this.getMatchChangeClick("1")}><div><span>MyGame</span></div></li>
+                    <li onClick={() => this.getMatchChangeClick(1,106001)}><div><span>MyGame</span></div></li>
                     {topmenu.map(topmenulist =>(                                            
                         <li 
                             key={topmenulist.game_type} 
@@ -56,7 +71,7 @@ class TopMenu extends Component {
                             gametype={topmenulist.game_type} 
                             display={topmenulist.web_pro_display_yn} 
                             order={topmenulist.web_pro_order}
-                            onClick={() => this.getMatchChangeClick(topmenulist.game_type)}
+                            onClick={() => this.getMatchChangeClick(topmenulist.game_type, 106001)}
                             >
                             <div> 
                             <Suspense fallback="loading">
@@ -67,12 +82,19 @@ class TopMenu extends Component {
                     ))}
                      <li><div><span>SWEEPSTAKES</span></div></li>   
                     </ul>
-                </div>         
+
+                    <div className="top-sub-menubox">
+                        <ul id="topMenuType" className="top-sub-menu hi">		
+                            <li className="106001" onClick={() => this.getMatchChangeClick(local_gametype, 106001)}>Upcoming {local_gametype}</li>
+                            <li className="106002" onClick={() => this.getMatchChangeClick(local_gametype, 106002)}>Live {local_gametype}</li>
+                            <li className="106003" onClick={() => this.getMatchChangeClick(local_gametype, 106003)}>History {local_gametype}</li>		
+                            {/* <li className="106004">Hi-Score Challenge</li> */}
+                        </ul>
+                    </div>   
+                </div>        
             )}          
             </div>
           )
     }
-}
-
-//const HighOrderComponentTranslated = withTranslation('common')(TopMenu)
+};
 export default TopMenu;

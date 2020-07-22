@@ -11,23 +11,24 @@ class Main extends React.Component {
     matchs: []    
   };
   getMatch = async () =>{
-    const  {data : {result: matchs }} = await axios.get(utils.DATA_URL+"/game/106001/103001/105001?type=code");
-    //console.log(matchs);
+    const  {data : {result: matchs }} = await axios.get(utils.DATA_URL+"/game/106001/103001/105001?type=code");    
     this.setState({matchs, isLoading :false}) ;    
-    console.log(matchs);
+    console.log(matchs);        
   }; 
   componentDidMount(){
     this.getMatch();
   };
-  getMatchChange = async (gametype) =>{
+  getMatchChange = async (gametype, submenu) =>{
     this.setState({isLoading :true});
-    console.log(gametype);
-    const  {data : {result: matchs }} = await axios.get(utils.DATA_URL+"/game/106001/103001/"+`${gametype}`+"?type=code");    
-    this.setState({matchs, isLoading :false});
-  };
+    //console.log(gametype);
+    //console.log(submenu);
+    const  {data : {result: matchs }} = await axios.get(utils.DATA_URL+"game/"+`${submenu}`+"/103001/"+`${gametype}`+"?type=code");    
+    this.setState({matchs, isLoading :false});    
+    console.log(matchs);  
+  };  
   render() {   
     const {isLoading, matchs} = this.state;
-    
+    var local_gametype = localStorage.getItem('gametype');        
     return (      
         <div className="content">
           <TopMenu onChange={this.getMatchChange} />
@@ -36,7 +37,7 @@ class Main extends React.Component {
               <span className="loader-text">Loading...</span>
             </div>
           ) : (
-            <div>               
+            <div>                
               <ul className="match-list">  
               {matchs.length || 0 ? (
                   matchs.map(match =>(                    
@@ -50,11 +51,13 @@ class Main extends React.Component {
                       gp={match.gp} 
                       cc={match.cc}              
                       ln={match.ln}
+                      hs={match.hs}
+                      as={match.as}
+                      st={match.st}
                     />                  
-                  ))
-                  
+                  ))                  
               ):(
-                <div>no data </div>
+                <div className="no-list"><div className="txt1">no data</div></div>
               )}                
               </ul>
             </div>            
@@ -62,5 +65,5 @@ class Main extends React.Component {
         </div>
       )
   }
-}
+};
 export default Main;

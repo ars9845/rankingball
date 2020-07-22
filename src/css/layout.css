@@ -196,3 +196,11 @@ html, body {
 .container > footer .footer-link a{
 	display:inline-block;
 }
+
+
+.asset-121002, 
+.bonus {
+  background: url("https://dev.rankingball.com:13001/img/bonus-icon-1.png") no-repeat 4px center;
+  padding-left: 26px !important;
+  text-align: left;
+}
