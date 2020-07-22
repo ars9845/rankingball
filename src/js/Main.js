@@ -28,7 +28,10 @@ class Main extends React.Component {
   };  
   render() {   
     const {isLoading, matchs} = this.state;
-    var local_gametype = localStorage.getItem('gametype');        
+      var local_gametype = localStorage.getItem('gametype');      
+      if(local_gametype || undefined){
+          localStorage.setItem('gametype',105001);    
+      }
     return (      
         <div className="content">
           <TopMenu onChange={this.getMatchChange} />
