@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/rankingball/static/css/main.2baa6aa0.chunk.css",
-    "main.js": "/rankingball/static/js/main.c2ba9754.chunk.js",
-    "main.js.map": "/rankingball/static/js/main.c2ba9754.chunk.js.map",
+    "main.js": "/rankingball/static/js/main.759f48c4.chunk.js",
+    "main.js.map": "/rankingball/static/js/main.759f48c4.chunk.js.map",
     "runtime-main.js": "/rankingball/static/js/runtime-main.11314640.js",
     "runtime-main.js.map": "/rankingball/static/js/runtime-main.11314640.js.map",
     "static/js/2.590ba957.chunk.js": "/rankingball/static/js/2.590ba957.chunk.js",
     "static/js/2.590ba957.chunk.js.map": "/rankingball/static/js/2.590ba957.chunk.js.map",
     "index.html": "/rankingball/index.html",
-    "precache-manifest.71dcf5175a07f07109304ff57a401629.js": "/rankingball/precache-manifest.71dcf5175a07f07109304ff57a401629.js",
+    "precache-manifest.0566f8be9b27b3f702abd942082b6cc5.js": "/rankingball/precache-manifest.0566f8be9b27b3f702abd942082b6cc5.js",
     "service-worker.js": "/rankingball/service-worker.js",
     "static/css/main.2baa6aa0.chunk.css.map": "/rankingball/static/css/main.2baa6aa0.chunk.css.map",
     "static/js/2.590ba957.chunk.js.LICENSE.txt": "/rankingball/static/js/2.590ba957.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.11314640.js",
     "static/js/2.590ba957.chunk.js",
     "static/css/main.2baa6aa0.chunk.css",
-    "static/js/main.c2ba9754.chunk.js"
+    "static/js/main.759f48c4.chunk.js"
   ]
 }
