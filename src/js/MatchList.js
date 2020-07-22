@@ -44,7 +44,9 @@ function MatchList({ id, gameid, gametype, hometeam, awayteam, gp, cc, ln, hs, a
           <div className="total-box">
             <p className="t-prize">GUARANTEED PRIZE</p>
             <div className="t-sum">            
-              <span className="asset-121002">{gp.toLocaleString()}</span>			
+              <span className="asset-121002">{                
+                gp || undefined ? (gp.toLocaleString()):(0)              
+              }</span>			
             </div>
             <p className="t-total">TOTAL <span>13</span> CONTESTS</p>
           </div>

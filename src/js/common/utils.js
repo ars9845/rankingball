@@ -17,25 +17,25 @@ export const ESPORTS_PUBG = 105004;
 
 export function getAbbr(gameType) {		
     switch(gameType){
-    case this.SPORTS_MY:
+    case 1 :
         return "my";
-    case this.SPORTS_SOCCER:
+    case 104001:
         return "soccer";
-    case this.SPORTS_MLB:
+    case 104012:
         return "mlb";
-    case this.SPORTS_NFL:
+    case 104003:
         return "nfl";
-    case this.SPORTS_NBA:
+    case 104004:
         return "nba";
-    case this.SPORTS_KBO:
+    case 104012:
         return "kbo";
-    case this.ESPORTS_LOL:
+    case 105001:
         return "lol";
-    case this.ESPORTS_CS:
+    case 105002:
         return "cs";
-    case this.ESPORTS_DOTA:
+    case 105003:
         return "dota";
-    case this.ESPORTS_PUBG:
+    case 105004:
         return "pubg";
     }
 }
