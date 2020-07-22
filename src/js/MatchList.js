@@ -8,8 +8,8 @@ import Countdown,{zeroPad} from 'react-countdown';
 function MatchList({ id, gameid, gametype, hometeam, awayteam, gp, cc, ln, hs, as, st}){    
   return (
     <li>
-      <div className={"match-box " +utils.getAbbr(parseInt(gametype))}>
-        <div className="match-top">  
+      <div className={"match-box " +utils.getAbbr(gametype)}>
+        <div className="match-top">
           <div className="league-box">
             <div>
               <p className={"i-"+gametype}></p>
