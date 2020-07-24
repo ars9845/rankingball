@@ -31,7 +31,6 @@ class TopMenu extends Component {
     };
     getMatchChangeClick(gametype, submenu){                       
         var local_gametype = localStorage.getItem('gametype');
-
         if(gametype == 104002){            
             localStorage.setItem('gametype', 104012);            
             if(gametype==undefined){                        
@@ -46,9 +45,7 @@ class TopMenu extends Component {
             }else{                                                                                                 
                 this.props.onChange(gametype, submenu);
             }    
-        }
-
-                   
+        }                   
     };    
     render() {  
         const {isLoading, topmenu} = this.state;        

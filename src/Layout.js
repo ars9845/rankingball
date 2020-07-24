@@ -5,6 +5,7 @@ import Footer from "./js/common/Footer";
 import Main from './js/Main';
 import Login from './js/login/Login';
 import './css/layout.css';
+import "./css/team.css";
 
 class Layout extends React.Component {
   render() {

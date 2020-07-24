@@ -1,0 +1,440 @@
+@charset "utf-8";
+/************************************************************************
+* filename		: team.css
+* dscription	: team  CSS import
+* author		: ars9845
+* date			: 2020.07.03
++ version		: v1.0
+************************************************************************/
+
+/** Baseball **/
+.logo-MLB-ARI,
+.backlogo-MLB-ARI:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/ARI.svg")!important;
+}
+.logo-MLB-ATL,
+.backlogo-MLB-ATL:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/ATL.svg")!important;
+}
+.logo-MLB-BAL,
+.backlogo-MLB-BAL:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/BAL.svg")!important;
+}
+.logo-MLB-BOS,
+.backlogo-MLB-BOS:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/BOS.svg")!important;
+}
+.logo-MLB-CHC,
+.backlogo-MLB-CHC:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/CHC.svg")!important;
+}
+.logo-MLB-CIN,
+.backlogo-MLB-CIN:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/CIN.svg")!important;
+}
+.logo-MLB-CLE,
+.backlogo-MLB-CLE:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/CLE.svg")!important;
+}
+.logo-MLB-COL,
+.backlogo-MLB-COL:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/COL.svg")!important;
+}
+.logo-MLB-CWS,
+.backlogo-MLB-CWS:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/CWS.svg")!important;
+}
+.logo-MLB-DET,
+.backlogo-MLB-DET:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/DET.svg")!important;
+}
+.logo-MLB-HOU,
+.backlogo-MLB-HOU:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/HOU.svg")!important;
+}
+.logo-MLB-KC,
+.backlogo-MLB-KC:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/KC.svg")!important;
+}
+.logo-MLB-LAA,
+.backlogo-MLB-LAA:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/LAA.svg")!important;
+}
+.logo-MLB-LAD,
+.backlogo-MLB-LAD:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/LAD.svg")!important;
+}
+.logo-MLB-MIA,
+.backlogo-MLB-MIA:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/MIA.svg")!important;
+}
+.logo-MLB-MIL,
+.backlogo-MLB-MIL:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/MIL.svg")!important;
+}
+.logo-MLB-MIN,
+.backlogo-MLB-MIN:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/MIN.svg")!important;
+}
+.logo-MLB-NYM,
+.backlogo-MLB-NYM:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/NYM.svg")!important;
+}
+.logo-MLB-NYY,
+.backlogo-MLB-NYY:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/NYY.svg")!important;
+}
+.logo-MLB-OAK,
+.backlogo-MLB-OAK:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/OAK.svg")!important;
+}
+.logo-MLB-PHI,
+.backlogo-MLB-PHI:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/PHI.svg")!important;
+}
+.logo-MLB-PIT,
+.backlogo-MLB-PIT:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/PIT.svg")!important;
+}
+.logo-MLB-SD,
+.backlogo-MLB-SD:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/SD.svg")!important;
+}
+.logo-MLB-SEA,
+.backlogo-MLB-SEA:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/SEA.svg")!important;
+}
+.logo-MLB-SF,
+.backlogo-MLB-SF:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/SF.svg")!important;
+}
+.logo-MLB-STL,
+.backlogo-MLB-STL:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/STL.svg")!important;
+}
+.logo-MLB-TB,
+.backlogo-MLB-TB:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/TB.svg")!important;
+}
+.logo-MLB-TEX,
+.backlogo-MLB-TEX:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/TEX.svg")!important;
+}
+.logo-MLB-TOR,
+.backlogo-MLB-TOR:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/TOR.svg")!important;
+}
+.logo-MLB-WSH,
+.backlogo-MLB-WSH:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/mlb/WSH.svg")!important;
+}
+
+
+/** KBO **/
+.logo-KBO-DB,
+.backlogo-KBO-DB:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/kbo/KBO_DB.svg")!important;
+}
+.logo-KBO-HE,
+.backlogo-KBO-HE:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/kbo/KBO_HE.svg")!important;
+}
+.logo-KBO-KIA,
+.backlogo-KBO-KIA:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/kbo/KBO_KIA.svg")!important;
+}
+.logo-KBO-KT,
+.backlogo-KBO-KT:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/kbo/KBO_KT.svg")!important;
+}
+.logo-KBO-KW,
+.backlogo-KBO-KW:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/kbo/KBO_KW.svg")!important;
+}
+.logo-KBO-LG,
+.backlogo-KBO-LG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/kbo/KBO_LG.svg")!important;
+}
+.logo-KBO-LT,
+.backlogo-KBO-LT:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/kbo/KBO_LT.svg")!important;
+}
+.logo-KBO-NC,
+.backlogo-KBO-NC:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/kbo/KBO_NC.svg")!important;
+}
+.logo-KBO-SK,
+.backlogo-KBO-SK:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/kbo/KBO_SK.svg")!important;
+}
+.logo-KBO-SL,
+.backlogo-KBO-SL:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/kbo/KBO_SL.svg")!important;
+}
+
+
+/** LOL **/
+.logo-LCK,
+.backlogo-LCK:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/Logo_LCK.svg")!important;
+}
+.logo-LCS,
+.backlogo-LCS:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/Logo_LCS.svg")!important;
+}
+.logo-LEC,
+.backlogo-LEC:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/Logo_LEC.svg")!important;
+}
+.logo-LPL,
+.backlogo-LPL:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/Logo_LPL.svg")!important;
+}
+.logo-LOL-100,
+.backlogo-LOL-100:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_100.svg")!important;
+}
+.logo-LOL-AF,
+.backlogo-LOL-AF:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_AFS.svg")!important;
+}
+.logo-LOL-BLG,
+.backlogo-LOL-BLG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_BLG.svg")!important;
+}
+.logo-LOL-C9,
+.backlogo-LOL-C9:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_C9.svg")!important;
+}
+.logo-LOL-CG,
+.backlogo-LOL-CG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_CG.svg")!important;
+}
+.logo-LOL-CLG,
+.backlogo-LOL-CLG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_CLG.svg")!important;
+}
+.logo-LOL-DWG,
+.backlogo-LOL-DWG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_DWG.svg")!important;
+}
+.logo-LOL-EDG,
+.backlogo-LOL-EDG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_EDG.svg")!important;
+}
+.logo-LOL-FLY,
+.backlogo-LOL-FLY:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_FLY.svg")!important;
+}
+.logo-LOL-FNC,
+.backlogo-LOL-FNC:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_FNC.svg")!important;
+}
+.logo-LOL-FOX,
+.backlogo-LOL-FOX:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_FOX.svg")!important;
+}
+.logo-LOL-FPX,
+.backlogo-LOL-FPX:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_FPX.svg")!important;
+}
+.logo-LOL-G2,
+.backlogo-LOL-G2:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_G2.svg")!important;
+}
+.logo-LOL-GEN,
+.backlogo-LOL-GEN:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_GEN.svg")!important;
+}
+.logo-LOL-GGS,
+.backlogo-LOL-GGS:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_GGS.svg")!important;
+}
+.logo-LOL-GRF,
+.backlogo-LOL-GRF:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_GRF.svg")!important;
+}
+.logo-LOL-HLE,
+.backlogo-LOL-HLE:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_HLE.svg")!important;
+}
+.logo-LOL-IG,
+.backlogo-LOL-IG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_IG.svg")!important;
+}
+.logo-LOL-JAG,
+.backlogo-LOL-JAG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_JAG.svg")!important;
+}
+.logo-LOL-JDG,
+.backlogo-LOL-JDG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_JDG.svg")!important;
+}
+.logo-LOL-KT,
+.backlogo-LOL-KT:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_KT.svg")!important;
+}
+.logo-LOL-KZ,
+.backlogo-LOL-KZ:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_KZ.svg")!important;
+}
+.logo-LOL-LGD,
+.backlogo-LOL-LGD:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_LGD.svg")!important;
+}
+.logo-LOL-MSF,
+.backlogo-LOL-MSF:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_MSF.svg")!important;
+}
+.logo-LOL-OG,
+.backlogo-LOL-OG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_OG.svg")!important;
+}
+.logo-LOL-OMG,
+.backlogo-LOL-OMG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_OMG.svg")!important;
+}
+.logo-LOL-OPT,
+.backlogo-LOL-OPT:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_OPT.svg")!important;
+}
+.logo-LOL-RGE,
+.backlogo-LOL-RGE:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_RGE.svg")!important;
+}
+.logo-LOL-RNG,
+.backlogo-LOL-RNG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_RNG.svg")!important;
+}
+.logo-LOL-RW,
+.backlogo-LOL-RW:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_RW.svg")!important;
+}
+.logo-LOL-S04,
+.backlogo-LOL-S04:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_S04.svg")!important;
+}
+.logo-LOL-SB,
+.backlogo-LOL-SB:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_SB.svg")!important;
+}
+.logo-LOL-SDG,
+.backlogo-LOL-SDG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_SDG.svg")!important;
+}
+.logo-LOL-SK,
+.backlogo-LOL-SK:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_SKG.svg")!important;
+}
+.logo-LOL-SKT,
+.backlogo-LOL-SKT:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_SKT.svg")!important;
+}
+.logo-LOL-SN,
+.backlogo-LOL-SN:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_SN.svg")!important;
+}
+.logo-LOL-SPY,
+.backlogo-LOL-SPY:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_SPY.svg")!important;
+}
+.logo-LOL-SS,
+.backlogo-LOL-SS:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_SS.svg")!important;
+}
+.logo-LOL-TL,
+.backlogo-LOL-TL:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_TL.svg")!important;
+}
+.logo-LOL-TOP,
+.backlogo-LOL-TOP:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_TOP.svg")!important;
+}
+.logo-LOL-TSM,
+.backlogo-LOL-TSM:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_TSM.svg")!important;
+}
+.logo-LOL-V5,
+.backlogo-LOL-V5:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_V5.svg")!important;
+}
+.logo-LOL-VG,
+.backlogo-LOL-VG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_VG.svg")!important;
+}
+.logo-LOL-VIT,
+.backlogo-LOL-VIT:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_VIT.svg")!important;
+}
+.logo-LOL-WE,
+.backlogo-LOL-WE:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_WE.svg")!important;
+}
+.logo-LOL-XL,
+.backlogo-LOL-XL:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_XL.svg")!important;
+}
+.logo-LOL-T1,
+.backlogo-LOL-T1:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_T1.svg")!important;
+}
+.logo-LOL-DMO,
+.backlogo-LOL-DMO:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_DMO.svg")!important;
+}
+.logo-LOL-LNG,
+.backlogo-LOL-LNG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_LNG.svg")!important;
+}
+.logo-LOL-TOP,
+.backlogo-LOL-TOP:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_TOP.svg")!important;
+}
+.logo-LOL-APK,
+.backlogo-LOL-APK:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_APK.svg")!important;
+}
+.logo-LOL-DRX,
+.backlogo-LOL-DRX:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_DRX.svg")!important;
+}
+.logo-LOL-DIG,
+.backlogo-LOL-DIG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_DIG.svg")!important;
+}
+.logo-LOL-EG,
+.backlogo-LOL-EG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_EG.svg")!important;
+}
+.logo-LOL-GG,
+.backlogo-LOL-GG:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_GG_LCS.svg")!important;
+}
+.logo-LOL-IMT,
+.backlogo-LOL-IMT:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_IMT.svg")!important;
+}
+.logo-LOL-MAD,
+.backlogo-LOL-MAD:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_MAD.svg")!important;
+}
+.logo-LOL-ES,
+.backlogo-LOL-ES:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_ES.svg")!important;
+}
+.logo-LOL-TES,
+.backlogo-LOL-TES:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_TES.svg")!important;
+}
+.logo-LOL-DYN,
+.backlogo-LOL-DYN:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_DYN.svg")!important;
+}
+.logo-LOL-SHO,
+.backlogo-LOL-SHO:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_SHO.svg")!important;
+}
+.logo-LOL-SP,
+.backlogo-LOL-SP:before{
+	background-image: url("https://dev.rankingball.com:13001/img/svg/lol/LOL_SP.svg")!important;
+}

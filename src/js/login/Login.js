@@ -5,12 +5,12 @@ import FacebookLoginWithButton from 'react-facebook-login';
 
 const responseFacebook = (response) => {
     console.log(response);    
-    
 }
   
 const componentClicked = () => {
     console.log( "Clicked!" )
 }
+
 export default function App() {
     return (
         <div style={{position:"relative", height:"700px"}}>

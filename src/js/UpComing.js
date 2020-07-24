@@ -1,11 +1,10 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import PropTypes from "prop-types";
 import * as utils from './common/utils';
 import Moment from "react-moment";
 import Countdown,{zeroPad} from 'react-countdown';
 
-function MatchList({ id, gameid, gametype,homeabbr, awayabbr, hometeam, awayteam, gp, cc, ln, hs, as, st}){          
+function UpComing({ id, gameid, gametype, homeabbr, awayabbr, hometeam, awayteam, gp, cc, ln, hs, as, st}){          
   return (    
       <div className={"match-box " +utils.getAbbr(gametype)}>
         <div className="match-top">
@@ -19,7 +18,7 @@ function MatchList({ id, gameid, gametype,homeabbr, awayabbr, hometeam, awayteam
           <span className="join" >JOINED</span>
           <span className="match-time">
           <Countdown date={st} renderer={
-            st => <div>{st.days || 0 ? (st.days+"d:"):("")}{zeroPad(st.hours)}:{zeroPad(st.minutes)}:{zeroPad(st.seconds)}</div>
+            st => <div>{st.days || 0 ? (st.days+"d "):("")}{zeroPad(st.hours)}:{zeroPad(st.minutes)}:{zeroPad(st.seconds)}</div>
           } />
           </span>
           <div className="stats-box">
@@ -45,24 +44,24 @@ function MatchList({ id, gameid, gametype,homeabbr, awayabbr, hometeam, awayteam
           {gametype===104002 || gametype===104012 && (//kbo,mlb
             <div className="team-box">
               <div>
-                <span className="t-logo logo-LOL-RW"></span>             
+                <span className={"t-logo logo-"+utils.getGame(104012)+"-"+awayabbr}></span>             
                 <span className="t-team home">{awayteam} <em>&#40;{as}&#41;</em></span>							
               </div>
               <div>
-                <span className="t-logo logo-LOL-ES"></span>
+                <span className={"t-logo logo-"+utils.getGame(104012)+"-"+homeabbr}></span>
                 <span className="t-team away">{hometeam} <em>&#40;{hs}&#41;</em></span>							
               </div>
             </div>
           )}
           {gametype===104003 || gametype===104004 || gametype===105001 && (//lol, nfl, nba 
-            <div className="team-box">
+            <div className="team-box">              
               <div>
-                <span className="t-logo logo-LOL-RW"></span>             
-                <span className="t-team home">{awayabbr} <em>&#40;{as}&#41;</em></span>							
+                <span className={"t-logo logo-"+utils.getGame(gametype)+"-"+homeabbr}></span>
+                <span className="t-team away">{homeabbr} <em>&#40;{hs}&#41;</em></span>							                
               </div>
               <div>
-                <span className="t-logo logo-LOL-ES"></span>
-                <span className="t-team away">{homeabbr} <em>&#40;{hs}&#41;</em></span>							
+                <span className={"t-logo logo-"+utils.getGame(gametype)+"-"+awayabbr}></span>             
+                <span className="t-team home">{awayabbr} <em>&#40;{as}&#41;</em></span>							
               </div>
             </div>
           )}
@@ -79,4 +78,4 @@ function MatchList({ id, gameid, gametype,homeabbr, awayabbr, hometeam, awayteam
       </div>             
   )
 };  
-export default MatchList;
+export default UpComing;
