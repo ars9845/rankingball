@@ -36,6 +36,7 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section,
 	display: block;
 }
 a:link, a:visited, a:active {
+	color: #555555;
 	text-decoration: none;
 }
 a {

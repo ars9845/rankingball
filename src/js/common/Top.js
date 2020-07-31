@@ -4,7 +4,7 @@ function Top(){
     return(
         <header className="top">
             <h1 className="logo">                
-                <div className="home-logo"></div>
+                <Link to={{pathname: `/`}}><div className="home-logo"></div></Link>
                 <div className="sub-logo"></div>
                 <div className="goto-gdc"></div>
             </h1> 

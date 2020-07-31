@@ -1,19 +1,43 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import * as utils from './common/utils';
 import Moment from "react-moment";
 import Countdown,{zeroPad} from 'react-countdown';
+import * as utils from '../common/utils';
 
-function UpComing({ id, gameid, gametype, homeabbr, awayabbr, hometeam, awayteam, gp, cc, ln, hs, as, st}){          
-  return (    
-      <div className={"match-box " +utils.getAbbr(gametype)}>
+class UpComing extends React.Component {
+  constructor(props) {
+    super(props);        
+  };
+  state = {        
+    id: this.props.gi,
+    submenu: this.props.submenu,
+    gameid: this.props.gi,
+    gametype: this.props.gt,
+    homeabbr: this.props.hta,
+    awayabbr: this.props.ata,
+    hometeam: this.props.htn,
+    awayteam: this.props.atn, 
+    gp: this.props.gp, 
+    cc: this.props.cc,   
+    ln: this.props.ln,
+    hs: this.props.hs,
+    as: this.props.as,
+    st: this.props.st  
+  };
+  getContestClick(gametype, gameid, submenu){ 
+    this.props.onChange(gametype, gameid, submenu);
+  }
+  render() {     
+    const {key, id, submenu, gameid, gametype, homeabbr, awayabbr, hometeam, awayteam, gp, cc, ln, hs, as, st} = this.state;
+    return (    
+      <div className={"match-box " +utils.getAbbr(gametype)} onClick={() => this.getContestClick(gametype, gameid, submenu)}>        
         <div className="match-top">
           <div className="league-box">
             <div>
               <p className={"i-"+gametype}></p>
               <span>{ln}</span>
             </div>
-            <p><Moment format="hh:mm A z">{st}</Moment></p>			
+            <p><Moment format="hh:mm A z">{st}</Moment></p>
           </div>  
           <span className="join" >JOINED</span>
           <span className="match-time">
@@ -75,7 +99,10 @@ function UpComing({ id, gameid, gametype, homeabbr, awayabbr, hometeam, awayteam
             <p className="t-total">TOTAL <span>{cc}</span> CONTESTS</p>
           </div>
         </div>
-      </div>             
-  )
-};  
+      </div>   
+    )
+    //return end
+  }
+  //render end
+};
 export default UpComing;

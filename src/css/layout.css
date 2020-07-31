@@ -197,10 +197,78 @@ html, body {
 	display:inline-block;
 }
 
+.bg-color{
+  background-color: rgba(236, 241, 245, 1);
+}
 
 .asset-121002, 
 .bonus {
   background: url("https://dev.rankingball.com:13001/img/bonus-icon-1.png") no-repeat 4px center;
   padding-left: 26px !important;
   text-align: left;
+}
+.asset-121005, 
+.ticket {
+  background: url("https://dev.rankingball.com:13001/img/ticket-icon-1-1.png") no-repeat 4px center;
+  padding-left: 26px !important;
+  text-align: left;
+}
+
+.lodding-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lodding-bg.loading-bg {
+  z-index: 9999999;
+}
+.lodding-box{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:110px;
+	height:127px;
+	margin:-84px 0 0 -55px;
+	color:#0099ff;
+	font-family:'play';
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;		
+}
+.lodding-box .lodding{	
+	width:110px;
+	height:127px;	
+	margin:0 0 10px 0;
+	background:url("https://dev.rankingball.com:13001/img/lodding_on.png") left top no-repeat;
+	-webkit-animation: flickerAnimation 1s infinite;
+   -moz-animation: flickerAnimation 1s infinite;
+   -o-animation: flickerAnimation 1s infinite;
+    animation: flickerAnimation 1s infinite;
+}
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
 }

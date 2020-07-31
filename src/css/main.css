@@ -32,16 +32,110 @@
 }
 .top-type-menu .type-tab li {        
     position: relative;
-    width: 100%;        
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;  
+    height: 92px;      
     color: rgba(255, 255, 255, 0.5);
     font-size: 18px;
     font-family: "play";           
     text-align: center;
     cursor: pointer;
 }
+.top-type-menu .type-tab li a{
+    z-index:9;
+}
+.top-type-menu .type-tab li.active,
 .top-type-menu .type-tab li:hover{
     color:#fff;
 }
+.top-type-menu .type-tab li.active:after,
+.top-type-menu .type-tab li:not(disabled):hover:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 68px;
+    margin: 0 0 0 -12px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid #fff;
+}
+.top-type-menu .type-tab li > div{
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.top-type-menu .type-tab li em{
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    width:24px;
+    height:24px;
+    margin:0 auto 5px;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.top-type-menu .type-tab li .i-000000 {
+    background-image: url("https://dev.rankingball.com:13001/img/icon_single_star.png");    
+}
+.top-type-menu .type-tab li .i-104001 {
+    background-image: url("https://dev.rankingball.com:13001/img/type_tab3.png");
+}
+.top-type-menu .type-tab li .i-104002 {
+    background-image: url("https://dev.rankingball.com:13001/img/type_tab2.png");
+}
+.top-type-menu .type-tab li .i-104003 {
+    background-image: url("https://dev.rankingball.com:13001/img/type_tab4.png");
+}
+.top-type-menu .type-tab li .i-104004 {
+    background-image: url("https://dev.rankingball.com:13001/img/type_tab5.png");
+}
+.top-type-menu .type-tab li .i-105001 {
+    background-image: url("https://dev.rankingball.com:13001/img/esports_type_lol.png");
+    background-size: 114% 114%;
+    background-position: -1px -1px;
+}
+.top-type-menu .type-tab li:hover .i-000000,
+.top-type-menu .type-tab li.active .i-000000 {
+    background-image: url("https://dev.rankingball.com:13001/img/icon_single_star_on.png");
+}
+.top-type-menu .type-tab li:hover .i-104001,
+.top-type-menu .type-tab li.active .i-104001 {
+    background-image: url("https://dev.rankingball.com:13001/img/type_tab3_on.png");
+}
+.top-type-menu .type-tab li:hover .i-104002,
+.top-type-menu .type-tab li.active .i-104002 {
+    background-image: url("https://dev.rankingball.com:13001/img/type_tab2_on.png");
+}
+.top-type-menu .type-tab li:hover .i-104003,
+.top-type-menu .type-tab li.active .i-104003 {
+    background-image: url("https://dev.rankingball.com:13001/img/type_tab4_on.png");
+}
+.top-type-menu .type-tab li:hover .i-104004,
+.top-type-menu .type-tab li.active .i-104004 {
+    background-image: url("https://dev.rankingball.com:13001/img/nba/icon_NBA.png");
+}
+.top-type-menu .type-tab li:hover .i-105001,
+.top-type-menu .type-tab li.active .i-105001 {
+    background-image: url("https://dev.rankingball.com:13001/img/icon-lol.png");
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+
 
 .top-type-menu .top-sub-menubox {
     display: -webkit-flex;
@@ -59,6 +153,9 @@
     background: #fff;
     border-bottom: 1px solid #cbcbcd;
     z-index: 99;
+}
+.top-type-menu .top-sub-menubox.off{
+    display:none;
 }
 .top-type-menu .top-sub-menu{
 	display: -webkit-flex;
@@ -111,6 +208,166 @@
 	color:#fff;
 	background-color:#0066cc;
 }
+.stat-icon{
+	position:relative;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    padding: 15px 0 17px 0;    
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.stat-icon.off{
+    display:none;
+}
+.stat-icon > span{	
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    height:20px;
+    padding: 0 20px 0 26px;
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #666666;
+	 -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    background-size: 20px 20px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.stat-icon span.lineup{
+	background-image: url("https://dev.rankingball.com:13001/img/Icon_stat_Lineup_On@2x.png");
+}
+.lol .stat-icon span.lineup{
+	background-image: url("https://dev.rankingball.com:13001/img/icon-lineup-lol-on@2x.png");
+}
+.mlb .stat-icon span.lineup,
+.kbo .stat-icon span.lineup{
+	background-image: url("https://dev.rankingball.com:13001/img/icon-lineup-mlb-on.png");
+}
+.stat-icon span.stream{
+	background-image: url("https://dev.rankingball.com:13001/img/icon_stat_Streaming@2x.png");
+}
+.stat-icon span.live{
+	background-image: url("https://dev.rankingball.com:13001/img/icon_stat_Twitch@2x.png");
+}
+.stat-icon .btn-box{
+	position:absolute;
+	right:38px;
+	top:0;
+	padding:9px 0 0 0;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+}
+.stat-icon .btn-box .tit {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    height: 20px;
+    padding: 6px 20px 0 26px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #666666;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    background-size: 20px 20px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.stat-icon .btn-box .top-howto{
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    width: 136px;
+    height: 32px;       
+    margin:0 0;
+    padding: 7px 0 0 16px;
+    border-radius: 3px;
+    background-color: #000000;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    color: #ffffff;    
+    background-position: 94% 7px;
+    background-repeat: no-repeat;
+    background-image: url("https://dev.rankingball.com:13001/img/Icon_Play.png");
+}
+.stat-icon .btn-box .top-howto:hover{
+	cursor:pointer;
+	background-color:#666666;
+}
+.stat-icon .btn-box .go-exchange{
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;	    
+    width: 136px;
+	height: 32px;	
+	margin: 0 12px 0 0;
+	padding: 7px 0 0 16px;
+	border-radius: 3px;
+	background-color: #003367;	
+	font-size: 12px;
+	font-weight: 500;	
+	text-align: left;
+	color: #ffffff;	
+    background-position: 94% 7px;
+    background-repeat: no-repeat;
+    background-image:url("https://dev.rankingball.com:13001/img/icon_Exchange_P.png");   	
+}
+.stat-icon .btn-box .go-exchange:hover{
+	cursor:pointer;
+	background-color:#666666;
+}
+
+.stat-icon .btn-box .btn-aos,
+.stat-icon .btn-box .btn-ios{
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    width: 102px;
+    height: 30px;        
+    padding: 0 0;
+    background-position:100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("https://dev.rankingball.com:13001/img/btn-download-i-os@2x.png");
+    cursor:pointer;
+}
+.stat-icon .btn-box .btn-aos{
+	margin:0 0 0 4px;
+	background-image: url("https://dev.rankingball.com:13001/img/btn-download-google@2x.png");
+}
+
+
 
 .match-list li {
     position: relative;
@@ -145,7 +402,7 @@
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
     background-color: #ffffff;
 }
-.match-list li .match-box:hover:after {
+.match-list li .match-box:hover:before {
     content: "";
     position: absolute;
     left: -4px;
@@ -507,6 +764,14 @@
 .match-list li .match-box.up .match-bottom .team-box .t-team{
 	max-width:150px;
 }
+.match-list li .match-box.his .match-bottom .team-box .t-team {
+    max-width: 137px;
+}
+.match-list li .match-box .match-bottom .team-box .score {
+    width: 100%;
+    max-width: 50px;
+    text-align: right;
+}
 
 .match-list li .match-box .match-bottom .total-box {
     width: 100%;
@@ -725,4 +990,362 @@
 .no-list .text1{
     font-size:18px;	
 	color:#333;
+}
+.contest-total{
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    height: 72px;   
+    margin: 0 0;
+    padding: 0 32px 0;
+    font-size: 10px;
+    word-break: keep-all;    
+    align-items: center;
+    background: #fff;
+}
+.contest-total .count {
+    margin:0 0 0 10px;
+    font-family: 'Play';
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.contest-info {
+	position:relative;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+	width:100%;
+	max-width:1224px;	
+	height:84px;	
+	margin:0 auto 0;
+	background-color:#d2d9e1;
+}
+.contest-info .tm-first{
+	position:relative;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: flex;
+    max-width:509px;
+    width:100%;    
+    height:84px;
+    justify-content: flex-end
+}
+.contest-info .tm-infor{
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+     -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width:205px; 
+    width:100%;
+    height:84px;
+    text-align: center;
+}
+.contest-info .tm-second{	
+	position:relative;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: flex;
+    max-width:509px;
+    width:100%;
+    height:84px;    
+}
+.contest-info  .tm-first .t-first,
+.contest-info  .tm-second .t-second{
+	padding: 0 12px 0;
+	font-family:"play";
+	font-size:24px;
+	font-weight: bold;
+	color:#333333;
+}
+.contest-info .back-logo:before{
+	content:"";
+	position:absolute;	
+	top:0;
+	left:0;
+	display:block;
+	width:100%;
+	max-width:509px;
+	height:84px;
+	background-size:100% 450%;
+	background-position:0 center;
+	background-repeat:no-repeat;
+	opacity:0.1
+}
+.contest-info .tm-second.back-logo:before{
+	background-position:50px center;
+}
+.lol .contest-info .back-logo:before{
+	background-image:url("/img/Logo_LOL_Default@1x.png");
+}
+.contest-info .tm-first .t-logo,
+.contest-info .tm-second .t-logo
+{
+	width:72px;
+	height:72px;
+	background-size:100% 100%;
+	background-position:0 0;
+	background-repeat:no-repeat;	
+}
+.lol .contest-info .tm-first .t-logo,
+.lol .contest-info .tm-second .t-logo{
+	background-image:url("https://dev.rankingball.com:13001/img/Logo_LOL_Default@1x.png");
+		
+}
+
+.contest-info .tm-infor span{
+	font-size:12px;
+}
+.contest-info .tm-infor span:nth-child(1){
+	font-weight: 500;
+	color:#555555;
+	padding: 7px 0 0 0;
+}
+.contest-info .tm-infor span:nth-child(2){
+	font-weight: 500;
+	color:#555555;
+	font-size:13px;
+	padding: 7px 0 0 0;
+	
+}
+.contest-info .tm-infor span:nth-child(3){
+	position:relative;
+	width:108px;
+	height:24px;	
+	margin: 8px auto 0;	
+	padding: 3px 0 0 0;
+	font-family: 'Noto Sans';
+  	font-size: 14px;
+  	font-weight:bold;	
+  	color:#fff;
+  	background-color:#0066cc;
+}
+.contest-info .tm-infor span:nth-child(3):after{
+	content: " ";
+    position: absolute;
+    left: -11px;
+    top: 0;
+    width: 0px;
+    height: 0px;
+    border-top: 25px solid transparent;
+    border-right: 11px solid #0066cc;
+}
+.contest-info .tm-infor span:nth-child(3):before{
+	content: " ";
+    position: absolute;
+    right: -11px;
+    top: 0;
+    width: 0px;
+    height: 0px;
+    border-top: 25px solid transparent;
+    border-left: 11px solid #0066cc;
+}
+.contest-info .tm-infor .i-104001{
+	display:inline-block;
+	width:12px;
+	height:12px;
+	margin:0 5px 0 0;
+	background-image: url("https://dev.rankingball.com:13001/img/icon_infor_soccer@2x.png");
+    background-size: 12px 12px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+.contest-list {     
+    padding: 15px 32px 20px;
+}
+.contest-list .contest{
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center; 
+    height: 70px;   
+    background-color: #fff;
+    border-bottom: 1px solid #d8d8d8;
+}
+.contest-list .contest:hover:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 64px;
+    border: 3px solid #0066cc;
+}
+.contest-list .contest .tit{
+    width:174px;
+    padding: 0 0 0 28px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+.contest-list .contest .grp-box{
+    position: relative;
+    width: 100%;    
+    max-width: 300px;    
+}
+.contest-list .contest .grp-box .grp-txt{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    margin: 0 0 5px 0;
+    justify-content: space-between;
+}
+.contest-list .contest .grp-box .grp-txt .txt{    
+    font-size: 12px;
+    color: #818181;
+}
+.contest-list .contest .grp-box .grp-txt .sum {    
+    font-size: 13px;
+    color: #818181;
+}
+.contest-list .contest .grp-box .sum .count {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+.contest-list .contest .grp-box .grp {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    margin: 0 0;
+    border-radius: 2px 2px;
+    background: #dadbdd;
+}
+.contest-list .contest .grp-box .grp .grp-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    border-radius: 2px 2px;
+    background: #0079ff;
+    animation: grpbar 1s ease-in-out;
+    max-width: 100%;
+}
+.contest-list .contest .prizes{
+    width: 100%;    
+    max-width: 258px;    
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+.contest-list .contest .prizes .tit{    
+    padding: 0 0 6px 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: #818181;
+}
+.contest-list .contest .entry-fee{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;    
+    max-width: 400px;
+    padding: 0 28px 0 0;    
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+.contest-list .contest .entry-fee .btn-box{
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center; 
+    width: 100%;
+    max-width: 232px;
+    height: 46px;
+    font-family: 'play';
+    color: #fff;
+    border-left: 1px solid #b1b5b8;
+    border-right: 1px solid #b1b5b8;
+    border-bottom: 1px solid #b1b5b8;
+    border-radius: 4px 4px;
+    box-shadow: 0 0 0 0;
+    background-color: #0066cc;
+    cursor: pointer;    
+}
+.contest-list .contest .entry-fee .btn-box .entry-money{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100px;
+    height: 46px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.3);    
+    border-radius: 4px 0 0 4px;    
+}
+.contest-list .contest .entry-fee .btn-box .entry-txt{
+    width: 100%;    
+    max-width: 120px;    
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.contest-list .contest .entry-fee .btn-box:hover {
+    background-color: #113267;
 }
