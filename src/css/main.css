@@ -1183,10 +1183,6 @@
 }
 
 
-
-
-
-
 .contest-list {     
     padding: 15px 32px 20px;
 }
@@ -1215,11 +1211,51 @@
     border: 3px solid #0066cc;
 }
 .contest-list .contest .tit{
-    width:174px;
+    position: relative;
+    width:214px;
     padding: 0 0 0 28px;
     font-size: 14px;
     font-weight: bold;
     color: #000;
+}
+.contest-list .contest.featured{
+    height:90px;
+}
+.contest-list .contest.featured:hover:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 84px;
+    border: 3px solid #0066cc;
+}
+.contest-list .contest.featured > .tit{
+    width:514px;
+}
+.contest-list .contest.featured > .tit:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    display: block;
+    width: 22px;
+    height: 24px;
+    background-image: url("https://dev.rankingball.com:13001/img/icon_featured.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 22px 24px;
+}
+.contest-list .contest.featured .tit .subtxt{
+    font-size: 12px; 
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;   
+    color: #818181;
+
 }
 .contest-list .contest .grp-box{
     position: relative;
@@ -1268,6 +1304,7 @@
     max-width: 100%;
 }
 .contest-list .contest .prizes{
+    position: relative;
     width: 100%;    
     max-width: 258px;    
     text-align: right;
@@ -1276,12 +1313,14 @@
     color: #000;
 }
 .contest-list .contest .prizes .tit{    
+    display: inline-block;
     padding: 0 0 6px 0;
     font-size: 12px;
     font-weight: normal;
     color: #818181;
 }
 .contest-list .contest .entry-fee{
+    position: relative;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flexbox;
@@ -1289,7 +1328,7 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;    
-    max-width: 400px;
+    max-width: 360px;
     padding: 0 28px 0 0;    
     text-align: right;
     font-size: 14px;
@@ -1318,6 +1357,11 @@
     box-shadow: 0 0 0 0;
     background-color: #0066cc;
     cursor: pointer;    
+}
+.contest-list .contest .entry-fee a{
+    width: 100%;
+    max-width: 232px;
+    border:0;
 }
 .contest-list .contest .entry-fee .btn-box .entry-money{
     display: -webkit-flex;
@@ -1349,3 +1393,1141 @@
 .contest-list .contest .entry-fee .btn-box:hover {
     background-color: #113267;
 }
+.contest-list .stream-tit{
+    width: 100%;
+    margin: 30px 0 13px 0;
+    padding: 0 0 0 30px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    background-image: url("https://dev.rankingball.com:13001/img/icon-guaranteed@2x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 22px 22px;
+
+}
+.contest-list .cont-tit{
+    width: 100%;
+    margin: 30px 0 13px 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal; 
+}
+.setting-top{
+    position:relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    height:72px;    
+    background-color:rgba(255,255,255,1);
+}
+.setting-top > .tit{
+    width:100%;
+    max-width:50%;
+    padding: 0 0 0 30px;        
+}
+.setting-top > .tit.featured:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 33px;
+    height: 33px;
+    background: url("https://dev.rankingball.com:13001/img/icon_recom_blue.png") 0 0px no-repeat;
+}
+.setting-top .info-txt{
+    margin: 0 0 5px 0;
+    color:#003366;
+    font-size:14px;
+    font-weight:bold;
+    font-family:'play';     
+}
+.setting-top .info-txt .date{   
+    padding: 0 0 0 5px; 
+    font-weight: normal;
+    color:#999
+}
+.setting-top .team-txt{
+    color:#000;
+    font-size:14px;
+    font-weight:bold;
+    font-family:'play';     
+}
+.setting-top .info-txt.game-104002,
+.setting-top .info-txt.game-104012{
+    padding: 0 0 5px 20px;       
+    background-image: url("https://dev.rankingball.com:13001/img/icon_Baseball_B@2x.png");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+
+.setting-top .tit-group{
+    position:relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    width:100%;
+    max-width:50%;
+    text-align: center;
+    justify-content: space-around;
+}
+.setting-top .titbox{
+    font-size:12px;
+    color:#999
+}
+.setting-top .titbox .tit{
+    display:block;
+    margin:0 0 10px 0;
+}
+.setting-top .titbox p{
+    color:#000;
+    font-size:14px;
+    font-weight:bold;
+    font-family:'play'; 
+}
+.setting-top .titbox p span{
+    padding: 2px 0;
+}
+.setting-top .grp-box{
+    position: relative;    
+    width:100%;
+    max-width:230px;
+}
+.setting-top .grp-box .grp-txt{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    margin: 0 0 16px 0;
+    justify-content: space-between;
+}
+.setting-top .grp-box .grp-txt .txt{    
+    font-size: 12px;
+    color: #999;
+}
+.setting-top .grp-box .grp-txt .sum {    
+    padding: 3px 0 0 0;
+    font-size: 12px;
+    font-family:'play';
+    color: #999;
+}
+.setting-top .grp-box .sum .count {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+.setting-top .grp-box .sum-percent{
+    position:absolute;
+    right:0;
+    bottom:0;
+    font-size:14px;
+    font-family:'play';
+    font-weight: bold;
+    color:#000;
+}
+.setting-top .grp-box .grp {
+    position: relative;
+    width: 80%;
+    height: 4px;
+    margin: 0 0;
+    border-radius: 2px 2px;
+    background: #dadbdd;
+}
+.setting-top .grp-box .grp .grp-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    border-radius: 2px 2px;
+    background: #0079ff;
+    animation: grpbar 1s ease-in-out;
+    max-width: 100%;
+}
+
+.create-content{
+    position:relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;    
+    padding: 20px 32px 25px;
+    background-color: rgba(236, 241, 245, 1);
+}
+.condition-content{
+    width:100%;
+    max-width:605px;
+}
+
+.create-content.mlb .condition-content .select-team-box, 
+.create-content.kbo .condition-content .select-team-box, 
+.create-content.nba .condition-content .select-team-box, 
+.create-content.nfl .condition-content .select-team-box{
+    position: relative;
+    width: 545px;
+    max-width: 605px;
+    margin: 0 0 15px 0;
+    padding: 0 30px 15px;
+    background-color: #fff;
+}
+.create-content.mlb .condition-content .select-team-box .tit, 
+.create-content.kbo .condition-content .select-team-box .tit, 
+.create-content.nba .condition-content .select-team-box .tit, 
+.create-content.nfl .condition-content .select-team-box .tit{
+    padding: 14px 0 20px 0;
+    font-family: Play;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+.create-content.mlb .condition-content .select-team-box .icon-exc, 
+.create-content.kbo .condition-content .select-team-box .icon-exc, 
+.create-content.nba .condition-content .select-team-box .icon-exc, 
+.create-content.nfl .condition-content .select-team-box .icon-exc {
+    position: absolute;
+    right: 17px;
+    top: 17px;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://dev.rankingball.com:13001/img/icon_play_view.png");
+    background-size: 100% 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.select-team-btn,
+.select-team-infor{
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.select-team-btn > div{
+	position:relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+	width: 180px;
+	height: 42px;
+	font-size:14px;
+	color:#000;
+	border-radius: 2px;
+	border: solid 1px #a3a6bf;
+	background-image: linear-gradient(to bottom, #ffffff, #cccccc 100%);
+}
+
+.select-team-btn > div:nth-child(1){	
+	justify-content: flex-start;
+}
+.select-team-btn > div:nth-child(1).active,
+.select-team-btn > div:nth-child(1):hover{
+	color:#fff;
+	cursor:pointer;
+	background-image: linear-gradient(to bottom, #890000 0%, #e70000 100%);
+}
+.select-team-btn > div:nth-child(2){	
+	justify-content: flex-end;
+}
+.select-team-btn > div:nth-child(2).active,
+.select-team-btn > div:nth-child(2):hover{	
+	color:#fff;
+	cursor:pointer;
+	background-image: linear-gradient(to bottom, #003367 0%, #003bb1);
+}
+.select-team-btn > div span{
+	width:100%;
+	max-width:130px;
+	padding: 10px 0 0 0;
+	text-align:center;
+}
+.select-team-btn .t-logo{
+	display: inline-block;
+    width: 42px;    
+    height: 42px;
+    background-size: 44px 44px;    
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.select-team-infor{
+	margin:10px 0 10px 0;	
+	font-size: 13px;
+	font-weight: normal;  
+	text-align: left;
+	color: #333333;		
+}
+.select-team-infor .first,
+.select-team-infor .second{
+	width:100%;
+	max-width: 180px;  	
+  	justify-content: center;
+}
+.select-team-infor .sr-txt span,
+.select-team-infor .sp-txt span{
+    display:inline-block;
+    padding: 0 2px 0 0;
+}
+.select-team-box .txt {
+    font-size: 11px;
+    font-weight: normal;
+    color: #0066cc;
+}
+.select-team-infor .middle{
+	position:relative;
+	top:-52px;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+	width:100%;
+	max-width:172px;
+	height:42px;
+	justify-content: center;	
+}
+.select-team-infor .middle:before{
+	content: " ";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 28px;
+    margin: 0 0 0 -9px;
+    height:50px;
+    background-image:url("https://dev.rankingball.com:13001/img/icon_mlb_w.svg");
+    background-size: 100% 100%; 
+    background-position: 0 0;
+    z-index: 1;
+}
+.nfl .select-team-infor .middle:before{
+	content: " ";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 45px;
+    height:42px;
+    margin: 0 0 0 -23px;    
+	background-image:url("https://dev.rankingball.com:13001/img/img_Player_Def@2x.png");
+}
+.nba .select-team-infor .middle:before{
+	content: " ";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 23px;
+    height:45px;
+    margin: 0 0 0 -12px;    
+	background-image:url("https://dev.rankingball.com:13001/img/Ps_PG@2x.png");
+}
+.nhl .select-team-infor .middle:before{
+	content: " ";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 50px;
+    height:42px;
+    margin: 0 0 0 -25px;    
+	background-image:url("https://dev.rankingball.com:13001/img/Ps_Goalie@2x.png");
+}
+.select-team-infor .middle span{
+	position:relative;
+	display:inline-block;
+	width:100%;
+	max-width:60px;
+	padding: 11px 0 0 0;	
+	font-size: 14px;
+	font-weight: normal;
+	color:#fff;
+}
+.select-team-infor .middle span:nth-child(1){
+	padding: 11px 0 0 8px;
+	text-align:left;
+	background-color: #cc0000;
+}
+.select-team-infor .middle span:nth-child(2){
+	padding: 11px 8px 0 0;
+	text-align:right;
+	background-color: #003399;
+}
+.nfl .select-team-infor .middle span:nth-child(2){
+	padding: 11px 6px 0 0;
+}
+.select-team-infor .middle span:nth-child(1):after{
+    content: " ";
+    position: absolute;
+    left: -17px;
+    top: 0;
+    width: 0px;
+    height: 0px;
+	border-top: 21px solid transparent;
+    border-bottom: 21px solid transparent;
+    border-right: 17px solid rgba(204,0,0,1);
+}
+.select-team-infor .middle span:nth-child(2):after{
+    content: " ";
+    position: absolute;
+    right: -17px;
+    top: 0;
+    width: 0px;
+    height: 0px;
+	border-top: 21px solid transparent;
+    border-bottom: 21px solid transparent;
+    border-left: 17px solid rgba(0,51,153,1);
+}
+
+
+.select-content{
+    padding: 0 0 30px 0;
+    background-color: #fff;
+}
+.select-content .select-tit{
+    padding: 14px 0 20px 0;
+    font-family: Play;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+}
+.select-content .select-team{
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;    
+    margin: 0 30px 0;
+    border: 1px solid #ccc;
+    border-radius:4px 4px;   
+}
+.select-content .select-team .first-team,
+.select-content .select-team .second-team{
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    width: 100%;
+    max-width:50%;
+    height: 36px;    
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;    
+    cursor: pointer;
+    justify-content: center   
+}
+.select-content .select-team .team:nth-last-child(1){
+    border-left: 1px solid #ccc;
+}
+.select-content .select-team .team em{
+    display:none;
+}
+.select-content .select-team .first-team.active,
+.select-content .select-team .first-team:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #cc0000
+}
+.select-content .select-team .second-team.active,
+.select-content .select-team .second-team:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #003399
+}
+.select-content .select-txt{
+    padding: 15px 30px;
+    font-size: 11px;
+    font-weight: normal;
+    color: #0066cc;
+    background-color: #fff;
+}
+
+.select-content .select-player{
+    margin: 0 30px 0;
+}
+.select-content .select-player .tb-tit{
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    width: 100%;    
+    color: #fff;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    background-color: rgba(102,102,102,1);
+}
+.select-content .select-player .tb-tit span{ 
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;    
+    height: 40px;
+    font-size: 12px;
+    color: #ccc;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+}
+.select-content .select-player .tb-tit span.no,
+.select-content .select-player .tb-tit span.pos,  
+.select-content .select-player .tb-tit span.fppg,  
+.select-content .select-player .tb-tit span.pick{
+    width:100%;
+    max-width: 55px;
+}  
+.select-content .select-player .tb-tit span.starters{
+    width:100%;
+    max-width: 65px;
+}
+.select-content .select-player .tb-tit span.name{
+    width:100%;
+    max-width: 220px;
+}
+.select-content .select-player .tb-txt li{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;    
+    height: 40px;
+    font-size: 12px;    
+    cursor: pointer;    
+}
+.select-content .select-player .tb-txt li > span{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;    
+    height: 40px;
+    font-size:14px;
+    justify-content: center;
+}
+.select-content .select-player .tb-txt li span.no,
+.select-content .select-player .tb-txt li span.pos,  
+.select-content .select-player .tb-txt li span.fppg,  
+.select-content .select-player .tb-txt li span.pick{
+    width:100%;
+    max-width: 55px;
+}  
+.select-content .select-player .tb-txt li span.starters{
+    width:100%;
+    max-width: 65px;
+}
+.select-content .select-player .tb-txt li span.name{
+    width:100%;
+    max-width: 220px;
+    justify-content: flex-start;
+}
+.select-content .select-player .tb-txt li span.name em{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 20px 0 0;
+    background-image: url("https://dev.rankingball.com:13001/img/icon_play_view.png");
+    background-size: 100% 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    text-align: left;
+}
+.select-content .select-player .tb-txt li:nth-child(even){
+    background-color:rgba(236,241,245,1);
+}
+.select-content .select-player .tb-txt li:hover, 
+.select-content .select-player .tb-txt li.active {
+    color: #fff;
+    background-color: rgba(51,51,51,1);
+}
+.select-content .select-player .tb-txt li .btn-plus-minus{
+    margin:0 0 0 5px;
+}
+.btn-plus-minus{
+    position: relative;
+    display: inline-block;        
+    width: 24px;
+    height: 24px;    
+    padding: 0;
+    border: none;
+    border-radius: 12px 12px;
+    background-color: #0066cc;    
+    touch-action: manipulation;
+    z-index: 3;
+    outline: 0;
+}
+.btn-plus-minus .icon-wrapper {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.btn-plus-minus .icon-bar {
+    display: block;
+    position: absolute;
+    height: 2px;
+    padding: 0 0 0 0;
+    background-color: #fff;    
+    width: 100%;
+    top:4px;
+    left: 0;   
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transform: rotate(0deg);
+}
+.btn-plus-minus .icon-bar:nth-child(2) {
+    top: 4px;
+    transform: rotate(90deg);
+}
+
+
+.condition-content .txt-box {
+    margin: 20px 0 0;
+    padding: 0 0 0 16px;
+    font-size: 11px;
+    color: #999;
+}
+.condition-content .txt-box li{
+    list-style: outside;
+}
+
+
+
+.create-content .grid-content {
+    width: 100%;    
+    max-width: 540px;
+    margin: 0 0 0 15px;
+    background-size: 539px 597px;
+    background-repeat: no-repeat;
+}
+.create-content .grid-content .txt-box {
+    margin: 4px 0 6px 0;
+    padding: 0 0 0 16px;
+    font-size: 12px;
+    color: #999;
+}
+.create-content .grid-content .txt-box li{
+    list-style: outside;
+}
+.create-content .grid-content .grid-page {
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    width: 100%;
+    max-width: 502px;
+    border-bottom: 1px solid #000;
+}
+.create-content .grid-content .grid-page > span {
+    position: relative;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;    
+    width: 40px;
+    height: 40px;    
+    font-size: 16px;
+    color: #333;
+    background-color: rgba(255,255,255,1);
+    background-image: url("https://dev.rankingball.com:13001/img/nfl/page_bg.png");
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+}
+.create-content .grid-content .grid-page > span.active, 
+.create-content .grid-content .grid-page > span:hover {
+    color: #33ccff;
+    border-right: 1px solid #999;
+    background-color: #333;
+    background-image: none;
+}
+.create-content .grid-content .grid-page > span:nth-child(1).active, 
+.create-content .grid-content .grid-page > span:nth-child(1):hover{
+    border-left: 1px solid rgba(51,51,51,1);
+    background-color: rgba(51,51,51,1);
+}
+.create-content .grid-content .grid-page .btn-del {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #333;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    z-index: 3;
+    outline: 0;
+    border: 0;
+}
+.create-content .grid-content .grid-page .btn-del .icon-wrapper {
+    position:relative;
+    width:16px;
+    height:16px;
+    display:block;
+    margin:0 auto
+}
+.create-content .grid-content .grid-page .btn-del .icon-bar {
+    display:block;
+    position:absolute;
+    height:2px;
+    padding: 0 0 0 0;
+    background-color:#fff;
+    transform:rotate(0deg);
+    width:100%;
+    left:0;
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -ms-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out
+}
+.create-content .grid-content .grid-page .btn-del .icon-bar:nth-child(1) {
+    top:6px;
+    transform:rotate(135deg);
+}
+.create-content .grid-content .grid-page .btn-del .icon-bar:nth-child(2) {
+    top:6px;
+    transform:rotate(45deg);
+}
+.create-content .grid-content .grid-page .btn-del.open {
+    background-color:#e24046
+}
+.create-content .grid-content .grid-page .btn-del.open .icon-bar:nth-child(1) {
+    top:7px;
+    width:0;
+    left:50%
+}
+.create-content .grid-content .grid-page .btn-del.open .icon-bar:nth-child(2) {
+    top:7px;
+    transform:rotate(0deg)
+}
+.create-content .grid-content .grid-infor {
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    max-width: 502px;
+    height: 40px;
+    font-size: 14px;
+    color: #fff;
+    background-image: url("https://dev.rankingball.com:13001/img/box-top-l.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: rgba(51,51,51,1);
+}
+.create-content .grid-content .grid-infor p{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    width: 100%;
+    max-width: 50%;    
+    justify-content: space-around;
+}
+.create-content .grid-content .grid-infor p > span {
+    padding: 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.create-content .grid-content .cell-content {
+    width: 482px;
+    padding: 6px 10px 6px;    
+    background-color: rgba(51,51,51,1);
+}
+.cell-box {
+    padding: 6px 6px;
+    border-radius: 5px 5px;
+    background: #000;
+}
+.cell-box:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.cell-box .cell{
+    position: relative;
+    float: left;
+    width: 153px;
+    height: 153px;
+    margin: 0 5px 5px 0;
+    background-image: url("https://dev.rankingball.com:13001/img/Cell_Player_Setting.png");
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+.cell-box .cell:nth-child(5){
+    background-image: url("https://dev.rankingball.com:13001/img/Cell_PitchingTeam_Setting.png");
+}
+.cell-box .cell:nth-child(5) .btn-add-del{
+    display:none;
+}
+.cell-box .cell:nth-child(3),
+.cell-box .cell:nth-child(6),
+.cell-box .cell:nth-child(9){
+    margin: 0 0 5px 0;
+}
+.cell-box .cell:nth-child(7), 
+.cell-box .cell:nth-child(8){
+    margin: 0 5px 0 0;
+}
+.cell-box .cell:nth-child(9){
+    margin: 0 0 0 0;
+}
+.cell-box .cell .player-name{
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;    
+    height: 32px;
+    font-family: 'Play';
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: center;
+    color: #cccccc;
+}
+.cell-box .cell .player-photo{
+    display: none;
+    position: relative;
+    width: 145px;
+    height: 89px;
+    margin: 0 auto;
+}
+
+.cell-box .cell.active{
+    background-image: url("https://dev.rankingball.com:13001/img/Cell_Box_active.png");
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+.cell-box .cell.active .player-name{    
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.cell-box .cell.active.home .player-photo{
+    display: block;
+    background-image: url("https://dev.rankingball.com:13001/img/Cell_Player_Home.png");
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+.cell-box .cell.active.away .player-photo{
+    display: block;
+    background-image: url("https://dev.rankingball.com:13001/img/Cell_Player_Away.png");
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+.cell-box .cell .player-photo .tm{
+    position: absolute;
+    left: 5px;
+    top: 0;
+    opacity: 0.6;
+    font-family: 'Play';
+    font-size: 14.5px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.66;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.cell-box .cell .player-photo .num{
+    position: absolute;
+    right: 4px;
+    width: 30px;
+    bottom: 22px;
+    opacity: 0.5;
+    font-family: Roboto;
+    font-size: 20.9px;
+    font-weight: bold;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.cell-box .cell .player-photo .pos{
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    width: 30px;
+    opacity: 0.5;
+    font-family: Roboto;
+    font-size: 19.3px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.24;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.cell-box .cell .btn-add-del{
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    display: inline-block;
+    border: none;
+    background-color: #0066cc;
+    width: 42px;
+    height: 29px;
+    border-radius: 0 0 2px 0;
+    padding: 0;
+    outline: 0;
+}
+.cell-box .cell .btn-add-del .icon-wrapper{
+    position: relative;
+    width: 13px;
+    height: 13px;
+    display: block;
+    margin: 0 auto;
+}
+.cell-box .cell .btn-add-del:after{
+    content: " ";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid transparent;
+    border-right: 0;
+    border-bottom: 29px solid rgb(0, 102, 204);
+}
+.cell-box .cell .btn-add-del .icon-bar{
+    display: block;
+    position: absolute;
+    height: 2px;
+    padding: 0 0 0 0;
+    background-color: #fff;
+    transform: rotate(0deg);
+    width: 100%;
+    left: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;  
+}
+.cell-box .cell .btn-add-del .icon-bar:nth-child(1){
+    top: 5px;
+}
+.cell-box .cell .btn-add-del .icon-bar:nth-child(2){
+    top: 5px;
+    transform: rotate(90deg);
+}
+.cell-box .cell.active .btn-add-del.open{
+    background-color: #e24046
+}
+.cell-box .cell.active .btn-add-del.open:after{
+    border-bottom: 29px solid rgb(226, 64, 70);
+}
+.cell-box .cell.active .btn-add-del.open .icon-bar:nth-child(1){
+    top: 5px;
+    width: 0;
+    left: 50%;
+}
+.cell-box .cell.active .btn-add-del.open .icon-bar:nth-child(2){
+    top: 5px;
+    transform: rotate(0deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-box-setting{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;    
+    padding: 16px 32px 16px 32px;    
+    justify-content:space-between;    
+}
+.btn-box-setting button{
+    width: 205px;    
+}
+.btn-box-setting .back-list{
+	display:none;	
+}
+.btn-box-setting .btn-back{
+	width: 205px;
+    height: 50px;
+    font-size: 17px;
+    color: #fff;
+    background: #003366;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0 15px;
+    display: block;
+    font-weight: bold;
+    background-color: #666;
+}
+.btn-box-setting .btn-back:hover{
+	background-color:#333;
+}
+
+
+.Modal-overlay {
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background-color: rgba(0, 0, 0, 0.16);
+z-index:9;
+}
+.Modal {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);    
+border-radius: 10px;
+background-color: white;
+box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+z-index:99;
+}
+.Modal > * {
+margin-left: 16px;
+margin-right: 16px;
+}
+.Modal > *:first-child {
+margin-top: 16px;
+}
+.Modal p.title {
+font-size: 16pt;
+font-weight: bold;
+color: #333;
+}
+.Modal .content {
+border-top: 1px solid #bebebe;
+margin-top: 16px;
+}
+.Modal .content p {
+padding: 8px;
+font-size: 12pt;
+color: #999;
+}
+.Modal .button-wrap {
+margin: 0;
+margin-top: 8px;
+}
+.Modal .button-wrap button {
+width: 100%;
+padding: 12px 0;
+border-radius: 0 0 10px 10px;
+background-color: #ad7cef;
+font-size: 13pt;
+color: white;
+border: 0;
+cursor: pointer;
+}
+.Modal .button-wrap button:hover {
+background-color: #7f49c8;
+}
+.Modal .button-wrap button:active {
+background-color: #7e49c8;
+}
+.Modal-overlay.Modal-anim-enter {
+opacity: 0;
+transition: all 0.2s;
+}
+.Modal-overlay.Modal-anim-enter.Modal-anim-enter-active {
+opacity: 1;
+}
+.Modal-overlay.Modal-anim-leave {
+opacity: 1;
+transition: all 0.2s;
+}
+
+.Modal-overlay.Modal-anim-leave.Modal-anim-leave-active {
+opacity: 0;
+}
+
+.Modal.Modal-anim-enter {
+opacity: 0;
+transform: translate(-50%, -50%) scale(0.7);
+transition: all 0.2s;
+}
+.Modal.Modal-anim-enter.Modal-anim-enter-active {
+opacity: 1;
+transform: translate(-50%, -50%) scale(1);
+}
+.Modal.Modal-anim-leave {
+opacity: 1;
+transform: translate(-50%, -50%) scale(1);
+transition: all 0.2s;
+}
+.Modal.Modal-anim-leave.Modal-anim-leave-active {
+opacity: 0;
+transform: translate(-50%, -50%) scale(0.7);
+}
+
+
+
+

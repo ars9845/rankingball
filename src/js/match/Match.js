@@ -20,14 +20,14 @@ class Match extends React.Component {
     match: true,
     contest: false      
   };
-  getMatch = async () =>{
-    const {data : {result: matchslist }} = await axios.get(utils.DATA_URL+"/game/106001/103001/105001?type=code");               
-    const matchs = utils.groupBy(matchslist, "st");        
-    this.setState({matchs, isLoading :false});                 
+  getMatch = async (gametype, submenu) =>{    
+    const {data : {result: matchslist }} = await axios.get(utils.DATA_URL+`game/${submenu}/103001/${gametype}?type=code`);               
+    const matchs = utils.groupBy(matchslist, "st");            
+    this.setState({matchs, submenu, isLoading :false});
   };   
-  getMatchChange = async (gametype, submenu) =>{
+  getMatchChange = async (gametype, submenu) =>{    
     this.setState({isLoading :true});        
-    const {data : {result: matchslist }} = await axios.get(utils.DATA_URL+"game/"+`${submenu}`+"/103001/"+`${gametype}`+"?type=code");                 
+    const {data : {result: matchslist }} = await axios.get(utils.DATA_URL+`game/${submenu}/103001/${gametype}?type=code`);                 
     const matchs = utils.groupBy(matchslist, "st");     
     this.setState({matchs, submenu, isLoading :false});                   
   }; 
@@ -35,15 +35,15 @@ class Match extends React.Component {
     this.props.onChange(gametype, gameid, submenu);
   }; 
   componentDidMount(){
-    this.getMatch();    
+    this.getMatch(this.state.gametype, this.state.submenu);    
   };
   componentDidUpdate(prevProps) {        
-    if (this.props.gametype !== prevProps.gametype || this.props.submenu !== prevProps.submenu ) {
+    if (this.props.gametype !== prevProps.gametype || this.props.submenu !== prevProps.submenu ) {      
       this.getMatchChange(this.props.gametype, this.props.submenu);  
     }
   }    
   render() {   
-    const {isLoading, matchs, match} = this.state;
+    const {isLoading, matchs} = this.state;
       var local_gametype = localStorage.getItem('gametype');          
       if(local_gametype === undefined){
           localStorage.setItem('gametype',105001);

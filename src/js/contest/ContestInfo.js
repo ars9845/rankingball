@@ -17,8 +17,7 @@ class ContestInfo extends React.Component {
     st: this.props.state.st     
   };
   render() {        
-    const {submenu, gameid, gametype, hta, ata, gt, ln, st} = this.state;
-    const onoff = this.props.contest ? "off" : "on";    
+    const {gametype, hta, ata, ln, st} = this.state;    
     return(    
       <div className="contest-info">	
         <div className={"tm-first back-logo backlogo-"+utils.getGame(gametype)+"-"+hta}> 

@@ -1,0 +1,35 @@
+@charset "utf-8";
+/************************************************************************
+* filename		: login.css
+* dscription	: login  CSS import
+* author		: ars9845
+* date			: 2020.07.03
++ version		: v1.0
+************************************************************************/
+/* html, body {
+  background: rgba(236,241,245,1) url("https://dev.rankingball.com:13001/img/login_bg.png") 0 0 no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+}
+#wrap{	
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  max-width: 1224px;
+  margin:0 auto 0;
+  background: none !important;;
+} */
+
+.login-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 0 0 -240px;
+  padding: 40px 40px;
+  background-color: #fff;
+  text-align: center;
+}

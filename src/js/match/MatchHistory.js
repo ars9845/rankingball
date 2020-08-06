@@ -2,13 +2,11 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import * as utils from '../common/utils';
 import Moment from "react-moment";
-import Countdown,{zeroPad} from 'react-countdown';
-import { number } from 'prop-types';
 
-function MatchHistory({ id, gameid, gametype, homeabbr, awayabbr, hometeam, awayteam, gp, cc, ln, hs, as, st, gs ,hsc , asc, myec, tp, tw}){          
+function MatchHistory({ gametype, homeabbr, awayabbr, hometeam, awayteam, gp, cc, ln, hs, as, st, gs ,hsc , asc, myec, tp, tw}){          
   const my = myec = "0" ? "" : "mygm";    
-  const hWin = hsc > asc || hsc == asc ? "" : "lose";  
-  const AWin = asc > hsc || asc == hsc ? "" : "lose";    
+  const hWin = hsc > asc || hsc === asc ? "" : "lose";  
+  const AWin = asc > hsc || asc === hsc ? "" : "lose";    
   const lns = ln.indexOf("-") ? ln.split("-")[0] : ln;  
   
   return (
@@ -45,7 +43,7 @@ function MatchHistory({ id, gameid, gametype, homeabbr, awayabbr, hometeam, away
               </div>
             </div>
           )}
-          {gametype===104002 || gametype===104012 && (//kbo,mlb
+          {(gametype===104002 || gametype===104012) && (//kbo,mlb
             <div className="team-box">
               <div className={AWin}>
                 <span className={"t-logo logo-"+utils.getGame(104012)+"-"+awayabbr}></span>             
@@ -59,7 +57,7 @@ function MatchHistory({ id, gameid, gametype, homeabbr, awayabbr, hometeam, away
               </div>
             </div>
           )}
-          {gametype===104003 || gametype===104004 || gametype===105001 && (//lol, nfl, nba 
+          {(gametype===104003 || gametype===104004 || gametype===105001) && (//lol, nfl, nba 
             <div className="team-box">              
               <div className={hWin}>
                 <span className={"t-logo logo-"+utils.getGame(gametype)+"-"+homeabbr}></span>

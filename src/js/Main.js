@@ -1,5 +1,7 @@
 import React from 'react';
 import * as utils from './common/utils';
+import Top from "./common/Top";
+import Footer from "./common/Footer";
 import Lodding from "./common/Lodding";
 import TopMenu from "./common/TopMenu";
 import Staticon from "./match/StatIcon";
@@ -15,7 +17,7 @@ class Main extends React.Component {
     match: true,
     contest: false
   };  
-  getParentsTopMenu = (gametype, submenu) =>{        
+  getParentsTopMenu = (gametype, submenu) =>{       
     this.setState({gametype :gametype, submenu: submenu, match:true , contest:false });    
   };
   getParentsContest = (gametype, gameid, submenu) =>{            
@@ -33,26 +35,30 @@ class Main extends React.Component {
     var local_gametype = localStorage.getItem('gametype');          
     if(local_gametype === undefined){
       localStorage.setItem('gametype',105001);
-    }                 
+    }                     
+    return (
+      <div className="container">
+        <Top />
+      
+        <div className={"content bg-color " +  utils.getAbbr(Number(local_gametype))}>
+          <TopMenu state={this.state} contest={contest} onChange={this.getParentsTopMenu} />
+          <Staticon contest={contest} />        
+          {isLoading ? (
+            <Lodding />          
+          ) : (
+            <div>                
+              {match ? (                             
+                  <Match gametype={this.state.gametype} submenu={this.state.submenu} onChange={this.getParentsContest} />
+                ):(
+                  <Contest gametype={this.state.gametype} gameid={this.state.gameid} submenu={this.state.submenu} />
+                )
+              }              
+            </div>            
+          )}          
+        </div>
 
-    console.log(this.state.gameid);
-    return (    
-      <div className={"content bg-color " +  utils.getAbbr(Number(local_gametype))}>
-        <TopMenu contest={contest} onChange={this.getParentsTopMenu} />
-        <Staticon contest={contest} />        
-        {isLoading ? (
-          <Lodding />          
-        ) : (
-          <div>              
-            {match ? (                             
-                <Match gametype={this.state.gametype} submenu={this.state.submenu} onChange={this.getParentsContest} />
-              ):(
-                <Contest gametype={this.state.gametype} gameid={this.state.gameid} submenu={this.state.submenu} />
-              )
-            }              
-          </div>            
-        )}          
-      </div>
+        <Footer />
+      </div>    
     )
     //return end
   }

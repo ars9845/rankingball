@@ -26,7 +26,7 @@ function MatchLive({ id, gameid, gametype, homeabbr, awayabbr, hometeam, awaytea
         </div>
       )}
 
-      {gametype===104002 || gametype===104012 && (//kbo,mlb
+      {(gametype===104002 || gametype===104012) && (//kbo,mlb
         <div className={"match-live " + my}>
           <div className="tm-first"> 
             <span className="t-first">{awayteam}</span>
@@ -46,7 +46,7 @@ function MatchLive({ id, gameid, gametype, homeabbr, awayabbr, hometeam, awaytea
         </div>
       )}
 
-      {gametype===104003 || gametype===104004 || gametype===105001 && (//lol, nfl, nba 
+      {(gametype===104003 || gametype===104004 || gametype===105001) && (//lol, nfl, nba 
         <div className={"match-live " + my}>
           <div className="tm-first"> 
             <span className="t-first">{homeabbr}</span>

@@ -272,3 +272,71 @@ html, body {
   50%  { opacity:0; }
   100% { opacity:1; }
 }
+
+
+
+.sub-title {
+	position : relative;
+	display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  height: 66px;
+  /* margin: 0 -32px;*/
+  padding: 0 32px;
+  color: #fff;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-flex: 1;
+  flex: 1;
+  background-color:#020810;
+}
+
+.sub-title .btn{
+	position:absolute;
+	right:10px;
+	top: 60%;
+	width: 28px;
+	height: 28px;
+	margin:-14px 0 0 0;
+	padding: 0;
+	z-index: 3;
+	outline :0;
+	border:0;
+	cursor:pointer;
+	display:none;
+}
+.sub-title .btn.detail {
+	top : 40px;
+}
+.sub-title .grid-set-link{
+  position:absolute;
+  right:0;
+  top:16px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+}
+.sub-title .grid-set-link li{
+  position:relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  height:32px;
+  margin:0 32px 0 0;
+  font-size:12px;
+  color:#fff;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content:center;
+  cursor:pointer;
+}

@@ -21,7 +21,7 @@ export function getAbbr(gameType) {
         return "my";
     case 104001:
         return "soccer";
-    case 104012:
+    case 104002:
         return "mlb";
     case 104003:
         return "nfl";
@@ -37,7 +37,8 @@ export function getAbbr(gameType) {
         return "dota";
     case 105004:
         return "pubg";
-    }
+    default :       
+    }    
 }
 //gameType return league 
 export function getGame(gameType) {		
@@ -60,7 +61,35 @@ export function getGame(gameType) {
         return "DOTA";
     case 105004:
         return "PUBG";
+    default :  
     }
+}
+
+//gameType return league 
+export function getContestType(contestType) {		
+    switch(contestType){                
+    case 114001:
+        return "TNMT";
+    case 114002:
+        return "50/50";
+    case 114003:
+        return "30/30";
+    case 114004:
+        return "H2H"; 
+    case 114005:
+        return "SCORE"; 
+    case 114006:
+        return "LINE"; 
+    case 114011:
+        return "TNMT";
+    case 114012:
+        return "50/50";
+    case 114013:
+        return "30/30";
+    case 114014:
+        return "H2H"; 
+    default :    
+    }       
 }
 
 //match list date groupBy

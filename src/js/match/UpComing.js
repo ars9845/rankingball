@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 import Moment from "react-moment";
 import Countdown,{zeroPad} from 'react-countdown';
 import * as utils from '../common/utils';
@@ -28,7 +27,7 @@ class UpComing extends React.Component {
     this.props.onChange(gametype, gameid, submenu);
   }
   render() {     
-    const {key, id, submenu, gameid, gametype, homeabbr, awayabbr, hometeam, awayteam, gp, cc, ln, hs, as, st} = this.state;
+    const {submenu, gameid, gametype, homeabbr, awayabbr, hometeam, awayteam, gp, cc, ln, hs, as, st} = this.state;
     return (    
       <div className={"match-box " +utils.getAbbr(gametype)} onClick={() => this.getContestClick(gametype, gameid, submenu)}>        
         <div className="match-top">
@@ -65,7 +64,7 @@ class UpComing extends React.Component {
               </div>
             </div>
           )}
-          {gametype===104002 || gametype===104012 && (//kbo,mlb
+          {(gametype===104002 || gametype===104012) && (//kbo,mlb
             <div className="team-box">
               <div>
                 <span className={"t-logo logo-"+utils.getGame(104012)+"-"+awayabbr}></span>             
@@ -77,7 +76,7 @@ class UpComing extends React.Component {
               </div>
             </div>
           )}
-          {gametype===104003 || gametype===104004 || gametype===105001 && (//lol, nfl, nba 
+          {(gametype===104003 || gametype===104004 || gametype===105001) && (//lol, nfl, nba 
             <div className="team-box">              
               <div>
                 <span className={"t-logo logo-"+utils.getGame(gametype)+"-"+homeabbr}></span>
