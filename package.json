@@ -13,7 +13,7 @@
     "i18next": "^19.6.2",
     "i18next-browser-languagedetector": "^5.0.0",
     "i18next-xhr-backend": "^3.2.2",
-    "moment": "^2.27.0",
+    "moment": "^2.29.4",
     "mysql": "^2.18.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
